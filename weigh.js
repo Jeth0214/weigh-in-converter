@@ -1,7 +1,5 @@
 let weighFromValue;
 let weighToValue;
-//let weighFrom = document.getElementById("weighFrom");
-//let weighTo = document.getElementById("weighTo");
 let test = document.querySelectorAll(".test");
 let mass = document.getElementById("mass");
 let testOutput = [
@@ -13,6 +11,7 @@ let testOutput = [
     {from: "ounce", to: "pound", per1 : 0.0625},
 ]
 
+//get the value of select button
 function mode(){
     for(let i = 0; i < test.length; i++){
         test[i].addEventListener("change", function(){
@@ -25,22 +24,9 @@ function mode(){
 }
 
 mode();
-/*
-//get the value of the mass unit to convert
- weighFrom.addEventListener("change", async function () {
-    weighFromValue = await weighFrom.value;
-    console.log(weighFromValue);
-});
 
 
-//get the value of the  desired mass unit
-weighTo.addEventListener("change",async function () {
-    weighToValue = await weighTo.value;
-    console.log(weighToValue);
-});
-*/
-
-//get the value of input
+//get the value of input and convert it
 mass.addEventListener("input", async function () {
     await console.log(mass.value);
     let massInput = await mass.value;
