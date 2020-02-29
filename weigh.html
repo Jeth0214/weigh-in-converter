@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weigh In Converter</title>
+    <title>Weight Converter</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="weigh.css">
@@ -12,35 +12,38 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center my-5">Weigh In Converter</h1>
-        <div class="d-flex justify-content-center">
-            <div>
-                <div class="form-group mb-0">
-                    <input type="number" name="from" id="mass" class="form-control-lg form-control">
+    <div class="container mt-5">
+        <div class="card card-body">
+            <h1 class="card-title text-center">Weight Converter</h1>
+            <div class="d-flex justify-content-center card-text mt-5">
+                <div>
+                    <div class="form-group mb-0">
+                        <input type="number" name="from" id="mass" class="form-control-lg form-control">
+                    </div>
+                    <select class="form-control form-control-lg test">
+                        <option value="kilogram" selected>Kilogram</option>
+                        <option value="pound">Pounds</option>
+                        <option value="ounce">Ounces</option>
+                    </select>
                 </div>
-                <select class="form-control form-control-lg" id="weighFrom">
-                    <option value="kilogram">Kilogram</option>
-                    <option value="pounds">Pounds</option>
-                    <option value="ounces">Ounces</option>
-                </select>
-            </div>
-
-
-            <p class="display-4 mx-5 text-primary">=</p>
-
-            <div>
-                <div class="form-group mb-0">
-                    <input type="number" name="from" id="output" class="form-control-lg form-control">
+    
+    
+                <p class="display-4 mx-5 text-primary">=</p>
+    
+                <div>
+                    <div class="form-group mb-0">
+                        <input type="number" name="from" id="output" class="form-control-lg form-control">
+                    </div>
+                    <select class="form-control form-control-lg test">
+                        <option value="kilogram">Kilogram</option>
+                        <option value="pound">Pounds</option>
+                        <option value="ounce">Ounces</option>
+                    </select>
                 </div>
-                <select class="form-control form-control-lg" id="weighTo">
-                    <option value="kilogram">Kilogram</option>
-                    <option value="pounds">Pounds</option>
-                    <option value="ounces">Ounces</option>
-                </select>
+    
             </div>
-
         </div>
+        
     </div>
 
 
