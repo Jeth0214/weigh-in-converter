@@ -14,27 +14,33 @@
 <body>
     <div class="container">
         <h1 class="text-center my-5">Weigh In Converter</h1>
-        <div class="d-flex mt">
-            <select class="form-control form-control-lg" id="weighFrom">
-                <option value="kilogram">Kilogram</option>
-                <option value="pounds">Pounds</option>
-                <option value="ounces">Ounces</option>
-            </select>
+        <div class="d-flex justify-content-center">
+            <div>
+                <div class="form-group mb-0">
+                    <input type="number" name="from" id="mass" class="form-control-lg form-control">
+                </div>
+                <select class="form-control form-control-lg" id="weighFrom">
+                    <option value="kilogram">Kilogram</option>
+                    <option value="pounds">Pounds</option>
+                    <option value="ounces">Ounces</option>
+                </select>
+            </div>
 
-            <p id="toText">To</p>
 
-            <select class="form-control form-control-lg" id="weighTo">
-                <option value="kilogram">Kilogram</option>
-                <option value="pounds">Pounds</option>
-                <option value="ounces">Ounces</option>
-            </select>
+            <p class="display-4 mx-5 text-primary">=</p>
+
+            <div>
+                <div class="form-group mb-0">
+                    <input type="number" name="from" id="output" class="form-control-lg form-control">
+                </div>
+                <select class="form-control form-control-lg" id="weighTo">
+                    <option value="kilogram">Kilogram</option>
+                    <option value="pounds">Pounds</option>
+                    <option value="ounces">Ounces</option>
+                </select>
+            </div>
+
         </div>
-
-        <div class="form-group row  my-5">
-            <input type="number" name="from" id="from" class="form-control col-4 offset-4">
-        </div>
-
-        <div id="result"></div>
     </div>
 
 
